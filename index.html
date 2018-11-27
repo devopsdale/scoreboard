@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <div class="controls">
+
+
+    <button id="sub1" class="subtractor mather">-1</button>
+    <button id="sub5" class="subtractor mather">-5</button>
+
+    <button id="add5" class="adder mather">+5</button>
+    <button id="add10" class="adder mather">+10</button>
+
+  </div>
+
+  <div id="currentTotal" class="totz">0 </div>
+
+
+  <button id="reset" class="reset">Reset</button>
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script>
+  var result = 0;
+
+  $('#reset').on('click', function () {
+    result = 0;
+    $('#currentTotal').html(result);
+  });
+
+  $('#add5').on('click', function () {
+    result += 5;
+    $('#currentTotal').html(result);
+  });
+
+  $('#add10').on('click', function () {
+   result += 10;
+    $('#currentTotal').html(result);
+  });
+
+  $('#sub1').on('click', function () {
+    result -=1;
+    $('#currentTotal').html(result);
+  });
+
+  $('#sub5').on('click', function () {
+    result -= 10;
+    $('#currentTotal').html(result);
+  });
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
