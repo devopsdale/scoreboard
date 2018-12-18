@@ -1,12 +1,17 @@
+
 <!doctype html>
 
 <html lang="en">
+
 <head>
+
   <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <title>Please Behave</title>
+
+  <meta name="Scoreboard watching" content="Keeping track of who's being nice.">
+
+  <meta name="Dale Ramdeen" content="js experiment">
 
   <link rel="stylesheet" href="./style.css">
 
@@ -14,56 +19,89 @@
 
 <body>
 
-  <div class="controls">
+
+  <div id="controls_section">
+
+    <div class="maddie_controls">
+
+        <button id="m_sub25" class="subtraction mather"> - 25</button>
+
+        <button id="m_sub10" class="subtraction mather"> - 10</button>
+
+        <button id="m_add10" class="addition mather"> + 10</button>
+
+        <button id="m_add25" class="addition mather"> + 25</button>
+
+    </div>
+
+    <div class="julian_controls">
+
+        <button id="j_sub25" class="subtraction mather"> - 25</button>
+
+        <button id="j_sub10" class="subtraction mather"> - 10</button>
+
+        <button id="j_add10" class="addition mather"> + 10</button>
+
+        <button id="j_add25" class="addition mather"> + 25</button>
+
+    </div>
 
 
-    <button id="sub1" class="subtractor mather">-1</button>
-    <button id="sub5" class="subtractor mather">-5</button>
-
-    <button id="add5" class="adder mather">+5</button>
-    <button id="add10" class="adder mather">+10</button>
 
   </div>
 
-  <div id="currentTotal" class="totz">0 </div>
+
+  <div class="content_section">
 
 
-  <button id="reset" class="reset">Reset</button>
+      <div id="maddie_section">
 
+          <div id="maddieTotal" class="totz">0 </div>
+
+          <button id="reset" class="m_reset">Reset</button>
+
+     </div>
+
+
+     <div id="divider"></div>
+
+
+
+     <div id="julian_section">
+
+
+
+         <div id="julianTotal" class="totz">0 </div>
+
+         <button id="reset" class="j_reset">Reset</button>
+
+    </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+  <!-- jquery cdn -->
   <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-<script>
-  var result = 0;
+    crossorigin="anonymous">
+  </script>
 
-  $('#reset').on('click', function () {
-    result = 0;
-    $('#currentTotal').html(result);
-  });
-
-  $('#add5').on('click', function () {
-    result += 5;
-    $('#currentTotal').html(result);
-  });
-
-  $('#add10').on('click', function () {
-   result += 10;
-    $('#currentTotal').html(result);
-  });
-
-  $('#sub1').on('click', function () {
-    result -=1;
-    $('#currentTotal').html(result);
-  });
-
-  $('#sub5').on('click', function () {
-    result -= 10;
-    $('#currentTotal').html(result);
-  });
-</script>
+<!-- here's where the magic happens -->
 
 
+<script src="scoreboard.js"></script>
 
 
 
