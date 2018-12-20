@@ -1,4 +1,3 @@
-
 <!doctype html>
 
 <html lang="en">
@@ -15,34 +14,39 @@
 
   <link rel="stylesheet" href="./style.css">
 
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
 </head>
 
 <body>
-
 
   <div id="controls_section">
 
     <div class="maddie_controls">
 
-        <button id="m_sub25" class="subtraction mather"> - 25</button>
+      <div class="names">MADDIE</div>
 
-        <button id="m_sub10" class="subtraction mather"> - 10</button>
+      <button id="m_sub25" class="subtraction mather"> - 25</button>
 
-        <button id="m_add10" class="addition mather"> + 10</button>
+      <button id="m_sub10" class="subtraction mather"> - 10</button>
 
-        <button id="m_add25" class="addition mather"> + 25</button>
+      <button id="m_add10" class="addition mather"> + 10</button>
+
+      <button id="m_add25" class="addition mather"> + 25</button>
 
     </div>
 
     <div class="julian_controls">
 
-        <button id="j_sub25" class="subtraction mather"> - 25</button>
+      <div class="names">JULIAN</div>
 
-        <button id="j_sub10" class="subtraction mather"> - 10</button>
+      <button id="j_sub25" class="subtraction mather"> - 25</button>
 
-        <button id="j_add10" class="addition mather"> + 10</button>
+      <button id="j_sub10" class="subtraction mather"> - 10</button>
 
-        <button id="j_add25" class="addition mather"> + 25</button>
+      <button id="j_add10" class="addition mather"> + 10</button>
+
+      <button id="j_add25" class="addition mather"> + 25</button>
 
     </div>
 
@@ -50,38 +54,37 @@
 
   </div>
 
-
   <div class="content_section">
 
 
-      <div id="maddie_section">
+    <div id="maddie_section">
 
-          <div id="maddieTotal" class="totz">0 </div>
-
-          <button id="m_reset" class="m_reset">Reset</button>
-
-     </div>
+      <div id="maddieTotal" class="totz">0 </div>
 
 
-     <div id="divider"></div>
+    </div>
+
+    <div id="divider"></div>
+
+    <div id="julian_section">
+
+      <div id="julianTotal" class="totz">0 </div>
 
 
+    </div>
 
-     <div id="julian_section">
+    <div id="reset_section">
 
+      <button id="m_reset" class="m_reset">Reset</button>
 
-
-         <div id="julianTotal" class="totz">0 </div>
-
-         <button id="j_reset" class="j_reset">Reset</button>
+      <button id="j_reset" class="j_reset">Reset</button>
 
     </div>
 
 
 
 
-
-</div>
+  </div>
 
 
 
@@ -92,16 +95,13 @@
 
 
   <!-- jquery cdn -->
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
   </script>
 
-<!-- here's where the magic happens -->
+  <!-- here's where the magic happens -->
 
 
-<script src="scoreboard.js"></script>
+  <script src="scoreboard.js"></script>
 
 
 
@@ -110,4 +110,5 @@
 
 
 </body>
+
 </html>

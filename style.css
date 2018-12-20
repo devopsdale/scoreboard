@@ -4,6 +4,17 @@ body {
   padding: 0;
 }
 
+
+.names{
+
+  font-family: 'Anton', sans-serif;
+  font-size: 7em;
+  text-align: center;
+  color: #000;
+background: #FFFFFF;
+text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+}
+
 button {
   background-color: #FFD800;
   border: none;
@@ -82,6 +93,14 @@ button:focus {
   font-size: 1em;
   bottom: 5px;
   float:right;
+}
+
+
+#reset_section{
+  width: 92%;
+  bottom: 10px;
+  position: absolute;
+  margin: 9px auto;
 }
 
 h1 {
